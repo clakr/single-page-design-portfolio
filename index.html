@@ -18,6 +18,66 @@
   <body>
     <main>
       <h1 class="sr-only"></h1>
+      <header>
+        <img src="./logo.svg" alt="Logo" />
+        <button>Free Consultation</button>
+      </header>
+
+      <section class="hero">
+        <div class="copywrite">
+          <h2>Design solutions made easy</h2>
+          <p>
+            With over ten years of experience in various design disciplines, I'm
+            your one-stop shop for your design needs.
+          </p>
+        </div>
+        <div class="cards">
+          <pug src="src/cards.pug" />
+        </div>
+      </section>
+
+      <section class="about-me">
+        <img src="./image-amy.webp" alt="Amy's Image" />
+        <h2>I'm Amy, and I'd love to work on your next project</h2>
+        <p>
+          I love working with others to create beautiful design solutions. I've
+          designed everything from brand illustrations to complete mobile apps.
+          I'm also handy with a camera!
+        </p>
+        <button>Free Consultation</button>
+      </section>
+
+      <section class="works">
+        <h2>My Work</h2>
+        <div class="container--slides">
+          <ul class="wrapper--slides">
+            <pug src="src/slides.pug" />
+          </ul>
+        </div>
+        <ul class="container--navigation">
+          <li data-navigation="prevSlide">
+            <img src="./icon-arrow-left.svg" alt="Left Arrow Icon" />
+          </li>
+          <li data-navigation="nextSlide">
+            <img src="./icon-arrow-right.svg" alt="Right Arrow Icon" />
+          </li>
+        </ul>
+      </section>
+
+      <section class="book">
+        <h2>Book a call with me</h2>
+        <p>
+          I'd love to have a chat to see how I can help you. The best first step
+          is for us to discuss your project during a free consultation. Then we
+          can move forward from there.
+        </p>
+        <button>Free Consultation</button>
+      </section>
+
+      <footer>
+        <img src="./logo.svg" alt="Logo" />
+        <button>Free Consultation</button>
+      </footer>
     </main>
   </body>
 </html>

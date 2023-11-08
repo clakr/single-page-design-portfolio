@@ -1,0 +1,6 @@
+- const cards = [{src: './pattern-graphic-design.svg', heading: 'Graphic Design'}, {src: './pattern-ui-ux.svg', heading: 'UI/UX'}, {src: './pattern-apps.svg', heading: 'Apps'}, {src: './pattern-illustrations.svg', heading: 'Illustrations'}, {src: './pattern-photography.svg', heading: 'Photography'}, {src: './pattern-motion-graphics.svg', heading: 'Motion Graphics'}]
+
+each card in cards
+    article
+        img(src=card.src alt="")
+        h3= card.heading
