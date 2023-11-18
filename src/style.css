@@ -242,6 +242,7 @@
     place-items: center;
     border-radius: 100%;
     cursor: pointer;
+    user-select: none;
   }
 
   .works .container--navigation li:hover,

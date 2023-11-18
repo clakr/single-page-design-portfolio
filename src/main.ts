@@ -4,7 +4,7 @@ function changeTextContent(element: HTMLTitleElement | Element | null) {
   element.textContent = import.meta.env.VITE_PROJECT_NAME;
 }
 
-document.addEventListener("DOMContentLoaded", function () {
+(function () {
   const title = document.querySelector("title");
   changeTextContent(title);
 
@@ -20,6 +20,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const slider = document.querySelector("ul.wrapper--slides");
   if (!slider) return;
+
+  console.log("this runs?");
 
   slider.scrollTo({
     left: slideIndex * SLIDE_WIDTH,
@@ -53,4 +55,4 @@ document.addEventListener("DOMContentLoaded", function () {
       behavior: "smooth",
     });
   });
-});
+})();
