@@ -42,6 +42,11 @@
     background-color: var(--black);
   }
 
+  header button:hover,
+  header button:active {
+    background-color: var(--slate-blue);
+  }
+
   .hero {
     padding: 1.6rem;
   }
@@ -178,7 +183,11 @@
     background-color: var(--terracotta);
   }
 
-  /* works */
+  .about-me button:active,
+  .about-me button:hover {
+    background-color: var(--sandy-brown);
+  }
+
   .works {
     display: flex;
     flex-direction: column;
@@ -232,6 +241,12 @@
     display: grid;
     place-items: center;
     border-radius: 100%;
+    cursor: pointer;
+  }
+
+  .works .container--navigation li:hover,
+  .works .container--navigation li:active {
+    background-color: var(--slate-blue);
   }
 
   .book {
@@ -269,6 +284,11 @@
     background-color: var(--terracotta);
   }
 
+  .book button:hover,
+  .book button:active {
+    background-color: var(--sandy-brown);
+  }
+
   footer {
     padding: 3.2rem 1.6rem;
     margin-top: 0.8rem;
@@ -289,6 +309,11 @@
     padding: 0.8rem 2.8rem;
     border-radius: 2.8rem;
     background-color: var(--black);
+  }
+
+  footer button:hover,
+  footer button:active {
+    background-color: var(--slate-blue);
   }
 
   @media screen and (min-width: 768px) {
@@ -523,11 +548,12 @@
       order: 3;
     }
 
-    .book button {
+    .book button:last-child {
       order: 2;
       grid-row: span 2 / span 2;
       align-self: center;
       justify-self: flex-end;
+      margin-top: 0;
       margin-right: 3rem;
     }
 
