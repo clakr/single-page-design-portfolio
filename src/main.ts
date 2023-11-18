@@ -4,14 +4,17 @@ function changeTextContent(element: HTMLTitleElement | Element | null) {
   element.textContent = import.meta.env.VITE_PROJECT_NAME;
 }
 
-const SLIDE_WIDTH = 270;
-
 document.addEventListener("DOMContentLoaded", function () {
   const title = document.querySelector("title");
   changeTextContent(title);
 
   const heading = document.querySelector(".sr-only");
   changeTextContent(heading);
+
+  const slideEl = document.querySelector(".wrapper--slides>img");
+  if (!slideEl) return;
+
+  const SLIDE_WIDTH = slideEl.clientWidth;
 
   let slideIndex = 2;
 

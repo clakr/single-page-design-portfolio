@@ -290,4 +290,148 @@
     border-radius: 2.8rem;
     background-color: var(--black);
   }
+
+  @media screen and (min-width: 768px) {
+    header {
+      padding: 3.4rem 4rem;
+    }
+
+    header img {
+      width: 6.4rem;
+      height: 6.4rem;
+    }
+
+    header button {
+      font-size: 1.6rem;
+      padding: 1.4rem 4.5rem;
+      align-self: center;
+    }
+
+    .hero {
+      padding: 3rem 3.9rem;
+    }
+
+    .hero > *:not(:first-child) {
+      margin-top: 6.4rem;
+    }
+
+    .hero .copywrite > *:not(:first-child) {
+      margin-top: 2.7rem;
+    }
+
+    .hero .copywrite h2 {
+      font-size: 4.4rem;
+    }
+
+    .hero .copywrite p {
+      font-size: 1.8rem;
+      line-height: 2.8rem;
+      padding-inline: 0;
+    }
+
+    .cards {
+      grid-template-areas:
+        "a a b c"
+        "a a d d"
+        "e e f f";
+      grid-template-rows: 18.2rem 15.8rem 18.2rem;
+    }
+
+    .about-me {
+      padding: 0 4rem 0 50%;
+      margin-top: 8.1rem;
+      text-align: start;
+      position: relative;
+    }
+
+    .about-me img {
+      padding-inline: 0;
+      padding-bottom: 0;
+      position: absolute;
+      width: 36.4rem;
+      height: 36.4rem;
+      transform: translateX(calc(-100% - 6.9rem));
+    }
+
+    .about-me h2 {
+      font-size: 3.2rem;
+    }
+
+    .about-me p {
+      font-size: 1.8rem;
+      line-height: 2.8rem;
+    }
+
+    .about-me button {
+      font-size: 1.6rem;
+      padding: 1.4rem 4.5rem;
+    }
+
+    .works {
+      row-gap: 5.6rem;
+      margin-top: 12rem;
+    }
+
+    .works h2 {
+      font-size: 3.2rem;
+    }
+
+    .works .container--slides {
+      height: 36rem;
+    }
+
+    .works .container--slides .wrapper--slides {
+      height: 38rem;
+    }
+
+    .works .container--slides .wrapper--slides img {
+      width: 54rem;
+      height: 36rem;
+      margin-left: 3rem;
+    }
+
+    .works .container--slides .wrapper--slides img:last-child {
+      margin-right: 3rem;
+    }
+
+    .book {
+      margin-top: 12rem;
+      margin-inline: 3.9rem;
+      padding: 5.6rem 7.5rem;
+    }
+
+    .book > *:not(:first-child) {
+      margin-top: 2.6rem;
+    }
+
+    .book h2 {
+      font-size: 3.2rem;
+    }
+
+    .book p {
+      font-size: 1.8rem;
+      line-height: 2.8rem;
+    }
+
+    .book button {
+      font-size: 1.6rem;
+      padding: 1.4rem 4.5rem;
+    }
+
+    footer {
+      padding: 5.6rem 3.9rem;
+      margin-top: 0;
+    }
+
+    footer img {
+      width: 6.4rem;
+      height: 6.4rem;
+    }
+
+    footer button {
+      font-size: 1.6rem;
+      padding: 1.4rem 4.5rem;
+      align-self: center;
+    }
+  }
 }
